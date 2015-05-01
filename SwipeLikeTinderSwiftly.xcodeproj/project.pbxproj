@@ -13,6 +13,9 @@
 		41DAF1AA1AF41A1E00E92081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DAF1A91AF41A1E00E92081 /* Images.xcassets */; };
 		41DAF1AD1AF41A1E00E92081 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DAF1AB1AF41A1E00E92081 /* LaunchScreen.xib */; };
 		41DAF1B91AF41A1F00E92081 /* SwipeLikeTinderSwiftlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAF1B81AF41A1F00E92081 /* SwipeLikeTinderSwiftlyTests.swift */; };
+		41DAF1C41AF41A4700E92081 /* SwipableViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAF1C31AF41A4700E92081 /* SwipableViewContainer.swift */; };
+		41DAF1C61AF41A7600E92081 /* SwipableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAF1C51AF41A7600E92081 /* SwipableView.swift */; };
+		41DAF1C81AF41AA700E92081 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAF1C71AF41AA600E92081 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		41DAF1B21AF41A1E00E92081 /* SwipeLikeTinderSwiftlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeLikeTinderSwiftlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DAF1B71AF41A1F00E92081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DAF1B81AF41A1F00E92081 /* SwipeLikeTinderSwiftlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeLikeTinderSwiftlyTests.swift; sourceTree = "<group>"; };
+		41DAF1C31AF41A4700E92081 /* SwipableViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipableViewContainer.swift; sourceTree = "<group>"; };
+		41DAF1C51AF41A7600E92081 /* SwipableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipableView.swift; sourceTree = "<group>"; };
+		41DAF1C71AF41AA600E92081 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		41DAF19F1AF41A1E00E92081 /* SwipeLikeTinderSwiftly */ = {
 			isa = PBXGroup;
 			children = (
+				41DAF1C21AF41A3B00E92081 /* Swip */,
 				41DAF1A21AF41A1E00E92081 /* AppDelegate.swift */,
 				41DAF1A41AF41A1E00E92081 /* ViewController.swift */,
 				41DAF1A61AF41A1E00E92081 /* Main.storyboard */,
@@ -110,6 +117,16 @@
 				41DAF1B71AF41A1F00E92081 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41DAF1C21AF41A3B00E92081 /* Swip */ = {
+			isa = PBXGroup;
+			children = (
+				41DAF1C31AF41A4700E92081 /* SwipableViewContainer.swift */,
+				41DAF1C51AF41A7600E92081 /* SwipableView.swift */,
+				41DAF1C71AF41AA600E92081 /* Queue.swift */,
+			);
+			name = Swip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DAF1C81AF41AA700E92081 /* Queue.swift in Sources */,
 				41DAF1A51AF41A1E00E92081 /* ViewController.swift in Sources */,
+				41DAF1C41AF41A4700E92081 /* SwipableViewContainer.swift in Sources */,
 				41DAF1A31AF41A1E00E92081 /* AppDelegate.swift in Sources */,
+				41DAF1C61AF41A7600E92081 /* SwipableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
