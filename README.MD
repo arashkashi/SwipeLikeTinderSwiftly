@@ -4,6 +4,8 @@ The code is based on the word of https://github.com/cwRichardKim/TinderSimpleSwi
 
 Take note of the example project.
 
+Call backs could be easily added as you please. I intentionally kept it as lean as possible.
+
 ![alt tag](https://github.com/arashkashi/SwipeLikeTinderSwiftly/blob/master/swipe2.gif)
 
 ```javascript
@@ -11,10 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Add the container
-        var swipablecontainer = SwipableViewContainer(frame: self.view.frame)
-        self.view.addSubview(swipablecontainer)
         
         // Create views
         var firstcardView = UIView(frame: CGRectMake(0, 0, 100, 100))
@@ -25,6 +23,10 @@ class ViewController: UIViewController {
         
         var thirdCardView = UIView(frame: CGRectMake(0, 0, 100, 100))
         thirdCardView.backgroundColor = UIColor.orangeColor()
+        
+        // Add the container
+        var swipablecontainer = SwipableViewContainer(frame: self.view.frame)
+        self.view.addSubview(swipablecontainer)
         
         // Enqueue the views
         swipablecontainer.enqueue(firstcardView)
